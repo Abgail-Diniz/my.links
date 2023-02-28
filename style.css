@@ -180,7 +180,7 @@ footer{
         --bg-url: url(./assents/bg-desktop-dark.jpg);
     }
     .light{
-        --bg-url: url(./assents/bg-light-dark.jpg);
+        --bg-url: url(./assents/bg-desktop-light.jpg);
     }
 }
 
