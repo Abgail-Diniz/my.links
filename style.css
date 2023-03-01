@@ -3,6 +3,24 @@
     padding: 0;
     box-sizing: 0;
 }
+
+:root{
+    --text-color: white;
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.5);
+    --surface-color-hover: rgba(255, 255, 255, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bq-url: url(./assents/moon-stars.svg);
+}
+
+.light{
+    --text-color: black;
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bq-url: url(./assents/sun.svg);
+}
 /* Forma de colocar cada propriedade e o valor
 body{
     background-image: url(./assents/bg-mobile.jpg);
@@ -10,30 +28,12 @@ body{
     background-position: top center;
     background-size: cover;
 }
-*/
-:root{
-    --text-color: white;
-    --bg-url: url(./assents/bg-mobile.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.1);
-    --surface-color-hover: rgba(255, 255, 255, 0.05);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bq-url: url(./assents/moon-stars.svg);
-}
-
-.light{
-    --text-color: black;
-    --bg-url: url(./assents/bg-mobile-light.jpg);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bq-url: url(./assents/sun.svg);
-}
+*/ 
 /* Forma de atalho*/
 body{
-    background: var(--bg-url) no-repeat top center/cover;
+    background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(115,0,121,1) 49%, rgba(46,0,84,1) 100%);
     height: 100vh;
+
 }
 body *{
     font-family: 'Inter', sans-serif;
@@ -66,6 +66,7 @@ body *{
 #switch{
     position: relative;
     width: 64px;
+
     margin: 4px auto;
 }
 
@@ -83,7 +84,7 @@ body *{
     z-index: 1;
     transform: translateY(-50%);
 
-    animation: slide-to-back 0.3s;
+    animation: slide-to-back 0.2s;
 }
 
 #switch button:hover{
@@ -91,7 +92,7 @@ body *{
 }
 
 .light #switch button{
-    animation: slide-in 0.3s forwards;
+    animation: slide-in 0.2s forwards;
 }
 
 #switch span{
@@ -135,16 +136,15 @@ ul li a{
     text-decoration: none;
     font-weight: 500;
 
-    transition: background 0.3s;
+    transition: background 0.2s;
 }
 
 ul li a:hover{
-    background-color: var(--surface-color-hover);
+    background: var(--surface-color-hover);
     border: 2px solid var(--text-color);
 }
 
 /* Social Media Links*/
-
 #social-links{
     display: flex;
     justify-content: center;
@@ -175,14 +175,13 @@ footer{
 }
 
 /* Media Queries*/
-@media(min-width: 700px){
-    :root{
-        --bg-url: url(./assents/bg-desktop-dark.jpg);
+@media (max-width: 600px){
+    #container{
+        max-width: 400px;
     }
-    .light{
-        --bg-url: url(./assents/bg-desktop-light.jpg);
-    }
+
 }
+
 
 /*Animation*/
 @keyframes slide-in{

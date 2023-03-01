@@ -7,11 +7,12 @@
 - [Visite o projeto online](https://abgail-diniz.github.io/my.links/)
 
 <br>
-<h3>Imagem do site no tema Noite 🌚</h3>
-<img alt="Projeto Agregador de links" src=".github/preview-dark.jpg"  >
+<h3>Tema Dark 🌚</h3>
+<img alt="Imagem do site no tema Dark" src=".github/preview-dark.jpg"  >
 
-<h3>Imagem do site no tema Dia 🌞</h3>
-<img alt="Projeto Agregador de links" src=".github/preview-light.jpg"  >
+<h3>Tema Light 🌞</h3>
+<img alt="Imagem do site no tema Light " src=".github/preview-light.jpg"  >
+
 <br>
 
 ## 🚀 Tecnologias
